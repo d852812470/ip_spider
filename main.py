@@ -7,12 +7,12 @@ import sys
 if __name__ == '__main__':
     parser = OptionParser()
     parser.add_option("-m", "--mode", dest="mode", type="int", default=1,
-                      help="type of spider", metavar="NUMBER")
+                      help="爬取模式(1 or 2)", metavar="NUMBER")
     parser.add_option("-t", "--thread", dest="thread", type="int", default=10,
-                      help="the count num of thread", metavar="NUMBER")
+                      help="线程数目", metavar="NUMBER")
     parser.add_option("-p", "--page",
                       type="int", dest="page",
-                      help="if mode=2 the page of scan", metavar="NUMBER")
+                      help="第二种模式下需要爬取的页数，如果是第一种就不需要设置", metavar="NUMBER")
     (options, args) = parser.parse_args()
     if len(sys.argv) == 7 and int(sys.argv[2]) == 2:
         kuai_spider = Kip_spider(int(sys.argv[4]), int(sys.argv[6]))
