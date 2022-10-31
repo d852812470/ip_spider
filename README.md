@@ -18,6 +18,8 @@ pip install requests,bs4,fake_useragent,queue
 * -t  
 线程数目
 * -p  
-爬取的页数，模式为2时需要设置，不建议设置太大，后面的页数已经很久没有验证了
+爬取的页数，模式为2时需要设置，不建议设置太大，后面的页数已经很久没有验证了  
+
+##### 文件写入位置在ip_cache
 
 执行python main.py查看帮助  
